@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:verticalScrollbarPosition="left"
+    android:weightSum="1"
+    tools:context="com.example.raigekhi.projectmobidev.MainActivity">
+
+    <TextView
+        android:id="@+id/textviewStudentName"
+        android:layout_width="99dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextStudentName"
+
+        android:layout_alignBottom="@+id/editTextStudentName"
+        android:layout_alignStart="@+id/textviewSection"
+        android:layout_weight="0.21"
+        android:text="StudentName" />
+
+    <TextView
+        android:id="@+id/textviewSection"
+        android:layout_width="99dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextSection"
+        android:layout_alignBottom="@+id/editTextSection"
+        android:layout_alignStart="@+id/textviewMajor"
+        android:text="Section" />
+
+    <EditText
+        android:id="@+id/editTextSection"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editTextStudentName"
+        android:layout_below="@+id/editTextStudentName"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:hint="Section"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextStudentName"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="41dp"
+        android:layout_toEndOf="@+id/textviewStudentName"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="Full Name"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/textviewMajor"
+        android:layout_width="99dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextMajor"
+        android:layout_alignBottom="@+id/editTextMajor"
+        android:layout_alignStart="@+id/textviewAddress"
+        android:text="Major" />
+
+    <EditText
+        android:id="@+id/editTextMajor"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editTextStudentName"
+        android:layout_alignStart="@+id/editTextSection"
+        android:layout_below="@+id/editTextSection"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="Major"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textviewAddress"
+        android:layout_width="99dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/editTextAddress"
+        android:layout_marginStart="17dp"
+        android:text="Address" />
+
+
+    <EditText
+        android:id="@+id/editTextAddress"
+        android:layout_width="166dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editTextMajor"
+        android:layout_below="@+id/editTextMajor"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:hint="Contact Address"
+        android:inputType="textPersonName|textPostalAddress" />
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="151dp"
+        android:layout_height="45dp"
+        android:layout_alignStart="@+id/editTextAddress"
+        android:layout_below="@+id/editTextAddress"
+        android:text="Add  Info" />
+
+    <Button
+        android:id="@+id/btnupdate"
+        android:layout_width="151dp"
+        android:layout_height="48dp"
+
+        android:layout_alignBaseline="@+id/buttondelete"
+        android:layout_alignBottom="@+id/buttondelete"
+        android:layout_alignParentEnd="true"
+        android:text="Update info" />
+
+    <Button
+        android:id="@+id/buttonview"
+        android:layout_width="141dp"
+        android:layout_height="45dp"
+
+        android:layout_alignBottom="@+id/buttonsearch"
+        android:layout_alignEnd="@+id/btnupdate"
+        android:text="View Data" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/editTextupdate"
+        android:text="Student ID" />
+
+    <EditText
+        android:id="@+id/editTextupdate"
+        android:layout_width="235dp"
+        android:layout_height="45dp"
+        android:layout_alignEnd="@+id/editTextAddress"
+        android:layout_below="@+id/buttonAdd"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Search/Update/Delete ID"
+        android:inputType="textPersonName" />
+
+
+    <Button
+        android:id="@+id/buttondelete"
+        android:layout_width="151dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editTextupdate"
+        android:text="Delete info" />
+
+    <Button
+        android:id="@+id/buttonsearch"
+        android:layout_width="141dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/buttondelete"
+        android:layout_alignStart="@+id/buttondelete"
+        android:layout_below="@+id/btnupdate"
+        android:text="Search info" />
+
+</RelativeLayout>
